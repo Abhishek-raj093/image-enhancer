@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ImageUpload = (props) => {
-    const showImageHandler = (e) => {
+    const ShowImageHandler = (e) => {
         const file = e.target.files[0];
         if (file) {
             props.UploadImageHandler(file);
@@ -18,7 +18,7 @@ const ImageUpload = (props) => {
             type="file" 
             id='fileInput' 
             className='hidden' 
-            onChange={showImageHandler} 
+            onChange={ShowImageHandler} 
         />
         <span className='text-lg font-medium text-gray-600'>
             Click and drag to upload your images
